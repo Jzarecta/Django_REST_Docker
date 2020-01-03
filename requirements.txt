@@ -1,0 +1,6 @@
+six
+pytz
+django
+djangorestframework
+packaging
+appdirs

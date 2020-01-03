@@ -1,0 +1,15 @@
+# Specifies the syntax version of Docker-compose
+version: "3"
+
+# Set the service type and name
+# where should start bulding from
+# and setup a command to build
+# we finally map a volume to the current location
+services:
+  django:
+   build: .
+   command: python src/project/manage.py runserver 0.0.0.0:8000
+   volumes:
+   - .:/django_rest
+   ports:
+   - "8000:8000"
