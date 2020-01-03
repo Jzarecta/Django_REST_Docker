@@ -1,6 +1,6 @@
 six
 pytz
-django
+Django
 djangorestframework
 packaging
 appdirs
